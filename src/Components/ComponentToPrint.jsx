@@ -1,4 +1,4 @@
-import React, { forwardRef } from "react";
+import { forwardRef } from "react";
 import dndLogo from "../images/dndLogo.png";
 import * as RaceBonuses from "../Races/AbilBonuses";
 import * as CharInfo from './CharInfo';
