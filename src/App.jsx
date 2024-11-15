@@ -63,7 +63,7 @@ function App() {
   const ref = useRef();
 
   const nameCheck = charName !== "" ? charName : "Basic Info";
-  const fontCheck = fontThemeFantasy === true ? "eagle-lake" : "gotham-black";
+  const fontCheck = fontThemeFantasy === true ? "eagle-lake" : "Raleway-Black";
 
   useEffect(() => {
     if (

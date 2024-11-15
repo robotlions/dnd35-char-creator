@@ -22,7 +22,7 @@ export const TopNav = (props) => {
   }
 
   const fontCheck =
-    props.fontThemeFantasy === true ? "eagle-lake" : "gotham-black";
+    props.fontThemeFantasy === true ? "eagle-lake" : "Raleway-Black";
   const currentDate = new Date();
   let currentYear = currentDate.getFullYear();
 

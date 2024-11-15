@@ -1,18 +1,24 @@
-@font-face {
-  font-family: gotham-book;
-  src: url(./assets/fonts/Gotham-Book.otf);
-}
-@font-face {
-  font-family: gotham-bold;
-  src: url(./assets/fonts/Gotham-Bold.otf);
-}
-@font-face {
-  font-family: gotham-black;
-  src: url(./assets/fonts/Gotham-Black.otf);
-}
+
 @font-face {
   font-family: eagle-lake;
   src: url(./assets/fonts/EagleLake-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Raleway-Black";
+  src: local("Raleway-Black"),
+    url("../src/assets/fonts/Raleway-Black.ttf") format("woff");
+}
+@font-face {
+  font-family: "Raleway-SemiBold";
+  src: local("Raleway-SemiBold"),
+    url("../src/assets/fonts/Raleway-SemiBold.ttf") format("woff");
+}
+
+@font-face {
+  font-family: "Raleway-Medium";
+  src: local("Raleway-Medium"),
+    url("../src/assets/fonts/Raleway-Medium.ttf") format("woff");
 }
 
 @media print {
@@ -23,7 +29,7 @@
 }
 
 a.nav-link.active{
-  color: rgb(102, 108, 109) !important
+  color: rgb(102, 108, 109) !important;
 }
 
 a {
@@ -98,7 +104,7 @@ table {
 
 
 .font-standard {
-  font-family: gotham-book, sans-serif;
+  font-family: "Raleway-Medium", sans-serif;
 }
 
 .font-fantasy {
@@ -120,12 +126,20 @@ table {
   text-align: center;
 }
 
+.modal{
+  font-family: "Raleway-Medium";
+}
+
 .nameDisplay {
   width: 100%;
   text-align: left;
   border: solid 1px gray;
   border-radius: 5px;
   background-color: aliceblue;
+}
+
+.nav-link{
+  font-family: "Raleway-SemiBold";
 }
 
 
