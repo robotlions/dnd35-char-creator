@@ -12,13 +12,13 @@ import { QuickScores } from "./Components/QuickScores";
 import { Accordion } from "react-bootstrap";
 import * as Feats from "./Components/Feats";
 import * as Spells from "./Components/Spells";
-import ReactToPrint, { PrintContextConsumer } from "react-to-print";
 import { ComponentToPrint } from "./Components/ComponentToPrint";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import { BottomNav } from "./Components/BottomNav";
 import { BaseAttack } from "./Components/BaseAttack";
 import { charNames } from "./Data/CharNames";
+import { useReactToPrint } from "react-to-print";
 
 function App() {
   const [modeChosen, setModeChosen] = useState(false);
@@ -60,10 +60,13 @@ function App() {
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-  const ref = useRef();
+  const contentRef = useRef(null);
+const handlePrint = useReactToPrint({ contentRef });
 
   const nameCheck = charName !== "" ? charName : "Basic Info";
   const fontCheck = fontThemeFantasy === true ? "eagle-lake" : "Raleway-Black";
+
+  
 
   useEffect(() => {
     if (
@@ -612,7 +615,7 @@ function App() {
             <Modal.Body>
               <div>
                 <ComponentToPrint
-                  ref={ref}
+                  ref={contentRef}
                   charName={charName}
                   selectedClass={selectedClass}
                   selectedRace={selectedRace}
@@ -636,9 +639,8 @@ function App() {
                 />
               </div>
               <div style={{ textAlign: "center" }}>
-                <ReactToPrint bodyClass="pdfWindow" content={() => ref.current}>
-                  <PrintContextConsumer>
-                    {({ handlePrint }) => (
+               
+                   
                       <p>
                         <Button
                           variant="secondary rounded-0"
@@ -647,9 +649,8 @@ function App() {
                           Print
                         </Button>
                       </p>
-                    )}
-                  </PrintContextConsumer>
-                </ReactToPrint>
+                  
+                
                 <p>
                   <Button variant="secondary rounded-0" onClick={handleClose}>
                     Close
@@ -1041,7 +1042,7 @@ function App() {
           <Modal.Body>
             <div>
               <ComponentToPrint
-                ref={ref}
+                ref={contentRef}
                 charName={charName}
                 selectedClass={selectedClass}
                 selectedRace={selectedRace}
@@ -1065,9 +1066,7 @@ function App() {
               />
             </div>
             <div style={{ textAlign: "center" }}>
-              <ReactToPrint bodyClass="pdfWindow" content={() => ref.current}>
-                <PrintContextConsumer>
-                  {({ handlePrint }) => (
+             
                     <p>
                       <Button
                         variant="secondary rounded-0"
@@ -1076,9 +1075,7 @@ function App() {
                         Print
                       </Button>
                     </p>
-                  )}
-                </PrintContextConsumer>
-              </ReactToPrint>
+                 
               <p>
                 <Button variant="secondary rounded-0" onClick={handleClose}>
                   Close
