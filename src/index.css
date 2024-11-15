@@ -1,0 +1,162 @@
+@font-face {
+  font-family: gotham-book;
+  src: url(./assets/fonts/Gotham-Book.otf);
+}
+@font-face {
+  font-family: gotham-bold;
+  src: url(./assets/fonts/Gotham-Bold.otf);
+}
+@font-face {
+  font-family: gotham-black;
+  src: url(./assets/fonts/Gotham-Black.otf);
+}
+@font-face {
+  font-family: eagle-lake;
+  src: url(./assets/fonts/EagleLake-Regular.ttf);
+}
+
+@media print {
+  .pagebreak {
+      clear: both;
+      page-break-after: always;
+  }
+}
+
+a.nav-link.active{
+  color: rgb(102, 108, 109) !important
+}
+
+a {
+  text-decoration: none;
+  color: rgb(102, 108, 109);
+}
+
+a:link {
+  color: rgb(102, 108, 109);
+}
+
+a:visited {
+  color: rgb(102, 108, 109);
+}
+
+h6{
+  font-weight:700 !important;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+}
+
+
+
+.brandRow {
+  background-color: white;
+  height: 80px;
+  padding-right: 75px;
+  padding-top: 20px;
+}
+
+
+
+.attInput{
+  text-align: center;
+  width: 3rem;
+}
+
+.btn-info{
+  background-color: #3e8559 !important;
+  box-shadow: 2px 2px 2px lightgray;
+  min-width:150px;
+  color: white !important;
+  border: 1px solid gray !important;
+}
+
+.btn-alert{
+  box-shadow: 2px 2px 2px lightgray;
+  min-width:150px;
+  background-color: #b89737 !important;
+  border: 2px solid black !important;
+}
+
+.btn-secondary{
+  box-shadow: 2px 2px 2px lightgray;
+  min-width:150px;
+  background-color: #779241 !important;
+}
+
+.btn-primary{
+  box-shadow: 2px 2px 2px lightgray;
+  min-width:150px;
+}
+
+.btn-start-over{
+  position: absolute;
+  bottom: 50;
+  margin: 0 auto;
+}
+
+
+.font-standard {
+  font-family: gotham-book, sans-serif;
+}
+
+.font-fantasy {
+  font-family: eagle-lake, fantasy, sans-serif;
+}
+
+.inventoryBox{
+  border: 1px solid black;
+  min-height: 150px;
+}
+
+.linkLogos {
+  font-size: 40px;
+  color: rgb(223, 227, 228);
+}
+
+.listFrame {
+  border: solid black 1px;
+  text-align: center;
+}
+
+.nameDisplay {
+  width: 100%;
+  text-align: left;
+  border: solid 1px gray;
+  border-radius: 5px;
+  background-color: aliceblue;
+}
+
+
+.skillsBox{
+  border: 1px solid black;
+  min-height: 100px;
+}
+
+.totalScore {
+  background-color: aquamarine;
+}
+
+
+
+#gitLogo:hover {
+  color: black;
+}
+
+#mailLogo:hover {
+  color: black;
+}
+
+#standardLogo{
+  max-width: 50%;
+  margin-top: 20px;
+  margin-bottom:50px;
+}
+
+@media (max-width: 760px) {
+ 
+  .brandRow {
+    padding-right: 30px;
+  }
+}
