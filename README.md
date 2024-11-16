@@ -1,9 +1,19 @@
-# React + Vite
+# Dungeons and Dragons 3.5e Character Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project, written in Vite + ReactJS, uses tables from the 2003 release of the Dungeons and Dragons Player's Handbook to generate first-level D&D characters.
 
-Currently, two official plugins are available:
+Created characters can then be printed or exported as PDFs.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# dnd35-char-creator
+The app is styled in Bootstrap and is mobile-responsive.
+
+## To run locally:
+
+This assumes that you have Node installed.
+
+Clone this repository then add all dependencies with:
+
+*npm install*
+
+To run:
+
+*npm run dev*
