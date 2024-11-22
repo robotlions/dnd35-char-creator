@@ -75,7 +75,7 @@ export const ArmorMain = (props) => {
         <p>Speed 20': {item.speed20}</p>
       </div>
       <div className="col">
-        <Button variant="warning" onClick={() => removeItem(item, index)}>Remove</Button>
+        <Button variant="warning bg-gradient" onClick={() => removeItem(item, index)}>Remove</Button>
       </div>
     </div>
   ));
@@ -195,7 +195,7 @@ useEffect(()=>{
       <div>{purchasedArmor}</div>
      
 
-      <Button variant="secondary rounded-0" onClick={handleShow}>
+      <Button variant="secondary rounded-0 bg-gradient" onClick={handleShow}>
         Buy Armor and Shields
       </Button>
 
@@ -235,7 +235,7 @@ useEffect(()=>{
           {shieldDisplay}
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary rounded-0" onClick={handleClose}>
+          <Button variant="secondary rounded-0 bg-gradient" onClick={handleClose}>
             Close
           </Button>
          
@@ -295,7 +295,7 @@ export const WeaponsMain = (props) => {
       </div>
       
       <div className="col">
-        <Button variant="warning" onClick={() => removeItem(item, index)}>Remove</Button>
+        <Button variant="warning bg-gradient" onClick={() => removeItem(item, index)}>Remove</Button>
       </div>
     </div>
   ));
@@ -357,7 +357,7 @@ return(
       <div>{purchasedWeapons}</div>
      
 
-      <Button variant="secondary rounded-0" onClick={handleShow}>
+      <Button variant="secondary rounded-0 bg-gradient" onClick={handleShow}>
         Buy Weapons
       </Button>
 
@@ -397,7 +397,7 @@ return(
           {weaponDisplay("ammunition")}
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary rounded-0" onClick={handleClose}>
+          <Button variant="secondary rounded-0 bg-gradient" onClick={handleClose}>
             Close
           </Button>
          
@@ -422,12 +422,12 @@ export const StartingSilver = (props) => {
   }
 
   const normalMoney = props.totalSilver === 0 ? (
-    <Button variant="secondary rounded-0" onClick={() => genSilver()}>
+    <Button variant="secondary rounded-0 bg-gradient" onClick={() => genSilver()}>
       Roll Starting Money
     </Button>
   ) : (
     <Button
-      variant="secondary rounded-0"
+      variant="secondary rounded-0 bg-gradient"
       onClick={() => {
         props.setTotalSilver(0);
         props.setArmorMoney(0);

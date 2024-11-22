@@ -216,7 +216,7 @@ const handlePrint = useReactToPrint({ contentRef });
                     <em>Player's Handbook.</em>
                   </p>
                   <Button
-                    variant="secondary rounded-0"
+                    variant="secondary rounded-0 bg-gradient"
                     onClick={() => setModeChosen(true)}
                     style={{ marginTop: 20 }}
                   >
@@ -242,7 +242,7 @@ const handlePrint = useReactToPrint({ contentRef });
                     touch of a button.
                   </p>
                   <Button
-                    variant="secondary rounded-0"
+                    variant="secondary rounded-0 bg-gradient"
                     onClick={() => {
                       setQuickMode(true);
                       setModeChosen(true);
@@ -272,7 +272,7 @@ const handlePrint = useReactToPrint({ contentRef });
                     with a million silver.
                   </p>
                   <Button
-                    variant="secondary rounded-0"
+                    variant="secondary rounded-0 bg-gradient"
                     onClick={() => {
                       setMunchkinMode(true);
                       setModeChosen(true);
@@ -285,6 +285,8 @@ const handlePrint = useReactToPrint({ contentRef });
                 </div>
               </div>
             </div>
+            
+           
             <div className="row justify-content-center">
               <div className="col-auto">
                 <p style={{ marginTop: 50 }}>
@@ -374,7 +376,7 @@ const handlePrint = useReactToPrint({ contentRef });
               >
                 <div className="col-auto">
                   <Button
-                    variant="alert rounded-0"
+                    variant="alert rounded-0 bg-gradient"
                     onClick={() => createInstantCharacter()}
                     style={{ paddingLeft: 30, paddingRight: 30 }}
                   >
@@ -388,7 +390,7 @@ const handlePrint = useReactToPrint({ contentRef });
               >
                 <div className="col-auto col">
                   <Button
-                    variant="info rounded-0"
+                    variant="info rounded-0 bg-gradient"
                     onClick={() => window.location.reload()}
                   >
                     Start Over
@@ -568,7 +570,7 @@ const handlePrint = useReactToPrint({ contentRef });
                 <div className="col-auto">
                   <Button
                     name="printCharacterButton"
-                    variant="secondary rounded-0"
+                    variant="secondary rounded-0 bg-gradient"
                     onClick={(e) => handleShow()}
                   >
                     {/* <Button name="printCharacterButton" variant="secondary rounded-0" onClick={(e)=>{console.log(e)}}> */}
@@ -582,7 +584,7 @@ const handlePrint = useReactToPrint({ contentRef });
               >
                 <div className="col-auto">
                   <Button
-                    variant="info rounded-0"
+                    variant="info rounded-0 bg-gradient"
                     onClick={() => window.location.reload()}
                   >
                     Start Over
@@ -643,7 +645,7 @@ const handlePrint = useReactToPrint({ contentRef });
                    
                       <p>
                         <Button
-                          variant="secondary rounded-0"
+                          variant="secondary rounded-0 bg-gradient"
                           onClick={handlePrint}
                         >
                           Print
@@ -652,7 +654,7 @@ const handlePrint = useReactToPrint({ contentRef });
                   
                 
                 <p>
-                  <Button variant="secondary rounded-0" onClick={handleClose}>
+                  <Button variant="secondary rounded-0 bg-gradient" onClick={handleClose}>
                     Close
                   </Button>
                 </p>
@@ -1001,7 +1003,7 @@ const handlePrint = useReactToPrint({ contentRef });
             <div className="col-md-12">
               <Button
                 name="printCharacterButton"
-                variant="secondary rounded-0"
+                variant="secondary rounded-0 bg-gradient"
                 onClick={(e) => handleShow()}
               >
                 View and Print Character
@@ -1009,7 +1011,7 @@ const handlePrint = useReactToPrint({ contentRef });
               <br />
               <br />
               <Button
-                variant="info rounded-0"
+                variant="info rounded-0 bg-gradient"
                 onClick={() => window.location.reload()}
               >
                 Start Over
@@ -1069,7 +1071,7 @@ const handlePrint = useReactToPrint({ contentRef });
              
                     <p>
                       <Button
-                        variant="secondary rounded-0"
+                        variant="secondary rounded-0 bg-gradient"
                         onClick={handlePrint}
                       >
                         Print
@@ -1077,7 +1079,7 @@ const handlePrint = useReactToPrint({ contentRef });
                     </p>
                  
               <p>
-                <Button variant="secondary rounded-0" onClick={handleClose}>
+                <Button variant="secondary rounded-0 bg-gradient" onClick={handleClose}>
                   Close
                 </Button>
               </p>

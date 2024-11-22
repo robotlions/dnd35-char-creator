@@ -3,7 +3,7 @@ import './index.css'
 import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(
- 
-    <App />
+ <div style={{backgroundColor:"#f8f9fa"}}>
+    <App /></div>
   ,
 )

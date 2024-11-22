@@ -51,7 +51,7 @@ export const NewScores = (props) => {
   const [chr, setChr] = useState(10);
 
   const rerollButton = (
-    <Button variant="secondary rounded-0" onClick={() => rollButton()}>
+    <Button variant="secondary rounded-0 bg-gradient" onClick={() => rollButton()}>
       Roll Abilities
     </Button>
   );

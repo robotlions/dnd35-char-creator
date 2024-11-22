@@ -29,20 +29,24 @@
 }
 
 a.nav-link.active{
-  color: rgb(102, 108, 109) !important;
+  /* color: rgb(102, 108, 109) !important; */
+  color: #f8f9fa !important;
 }
 
 a {
   text-decoration: none;
-  color: rgb(102, 108, 109);
+  /* color: rgb(102, 108, 109); */
+  color: #f8f9fa;
 }
 
 a:link {
-  color: rgb(102, 108, 109);
+  /* color: rgb(102, 108, 109); */
+  color: #f8f9fa;
 }
 
 a:visited {
-  color: rgb(102, 108, 109);
+  /* color: rgb(102, 108, 109); */
+  color: #f8f9fa;
 }
 
 h6{
@@ -58,9 +62,9 @@ table {
 
 .brandRow {
   background-color: white;
-  height: 80px;
+  height: 60px;
   padding-right: 75px;
-  padding-top: 20px;
+  
 }
 
 
@@ -140,6 +144,7 @@ table {
 
 .nav-link{
   font-family: "Raleway-SemiBold";
+  
 }
 
 
@@ -152,14 +157,20 @@ table {
   background-color: aquamarine;
 }
 
+#gitLogo{
+  color: #212529;
+}
 
+#mailLogo{
+  color: #212529;
+}
 
 #gitLogo:hover {
-  color: black;
+  color: gray;
 }
 
 #mailLogo:hover {
-  color: black;
+  color: gray;
 }
 
 #standardLogo{

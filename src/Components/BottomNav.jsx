@@ -14,7 +14,7 @@ export const BottomNav = (props) => {
             {githubIcon}
           </a>
           {"\n"}
-          <a id="mailLogo" href="mailto:info@robotlions.com">
+          <a id="mailLogo" href="mailto:info@robotlions.com" >
             {planeIcon}
           </a>
           {"\n"}

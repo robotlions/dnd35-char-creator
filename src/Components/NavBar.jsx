@@ -28,7 +28,7 @@ export const TopNav = (props) => {
 
   return (
     <>
-      <Navbar bg="light" expand="lg">
+      <Navbar bg="dark" expand="lg" style={{height:60}}>
         <Container>
           <Navbar.Toggle className="ml-auto" aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -44,7 +44,7 @@ export const TopNav = (props) => {
                 
               >
                 <label
-                  style={{ color: "rgb(102, 108, 109)" }}
+                  style={{ color: "#f8f9fa" }}
                   className="form-check-label"
                   htmlFor="flexSwitchCheckFont"
                 >
@@ -70,6 +70,7 @@ export const TopNav = (props) => {
           marginLeft: "auto",
           marginRight: "auto",
           maxWidth: "50%",
+          marginTop:50,
         }}
       ></img>
       <div style={{ textAlign: "center" }}>

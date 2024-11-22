@@ -69,7 +69,7 @@ const levelInput = <Dropdown
         props.setBasicEdited(true);
       }}
     >
-      <DropdownButton variant="secondary rounded-0" title={thisState}>
+      <DropdownButton variant="secondary rounded-0 bg-gradient" title={thisState}>
         <Dropdown.Item eventKey={1}>1</Dropdown.Item>
         <Dropdown.Item eventKey={2}>2</Dropdown.Item>
         <Dropdown.Item eventKey={3}>3</Dropdown.Item>
@@ -205,7 +205,7 @@ export const AlignmentSelect = (props) => {
         props.setBasicEdited(true);
       }}
     >
-      <DropdownButton variant="secondary rounded-0" title={thisState}>
+      <DropdownButton variant="secondary rounded-0 bg-gradient" title={thisState}>
         <Dropdown.Item eventKey="Lawful Good">Lawful Good</Dropdown.Item>
         <Dropdown.Item eventKey="Neutral Good">Neutral Good</Dropdown.Item>
         <Dropdown.Item eventKey="Chaotic Good">Chaotic Good</Dropdown.Item>
