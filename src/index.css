@@ -49,6 +49,10 @@ a:visited {
   color: #f8f9fa;
 }
 
+a.nav-link:hover{
+  color: gray;
+}
+
 h6{
   font-weight:700 !important;
 }
@@ -146,6 +150,7 @@ table {
   font-family: "Raleway-SemiBold";
   
 }
+
 
 
 .skillsBox{
