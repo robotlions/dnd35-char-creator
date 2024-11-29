@@ -7,18 +7,18 @@
 @font-face {
   font-family: "Raleway-Black";
   src: local("Raleway-Black"),
-    url("../src/assets/fonts/Raleway-Black.ttf") format("woff");
+    url("../src/assets/fonts/Raleway-Black.ttf") format("ttf");
 }
 @font-face {
   font-family: "Raleway-SemiBold";
   src: local("Raleway-SemiBold"),
-    url("../src/assets/fonts/Raleway-SemiBold.ttf") format("woff");
+    url("../src/assets/fonts/Raleway-SemiBold.ttf") format("ttf");
 }
 
 @font-face {
   font-family: "Raleway-Medium";
   src: local("Raleway-Medium"),
-    url("../src/assets/fonts/Raleway-Medium.ttf") format("woff");
+    url("../src/assets/fonts/Raleway-Medium.ttf") format("ttf");
 }
 
 @media print {
